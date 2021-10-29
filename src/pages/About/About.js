@@ -1,7 +1,9 @@
+import { SectionTitle } from "../../components"
+
 const About = () => {
   return (
     <>
-      <h1>About</h1>
+      <SectionTitle>About us</SectionTitle>
     </>
   )
 }

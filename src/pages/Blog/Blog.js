@@ -1,7 +1,9 @@
+import { SectionTitle } from "../../components"
+
 const Blog = () => {
   return (
     <>
-      <h1>Blog</h1>
+      <SectionTitle>Blog</SectionTitle>
     </>
   )
 }
