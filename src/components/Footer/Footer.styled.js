@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { Container } from '../../GlobalStyles'
+import { SectionExtended, Container } from '../../GlobalStyles'
 
-export const Wrapper = styled.footer`
-  
+export const Wrapper = styled(SectionExtended)`
+  position: relative;
 `
 
 export const Inner = styled(Container)`
