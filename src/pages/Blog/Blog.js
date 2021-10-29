@@ -1,8 +1,8 @@
 const Blog = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h1>Blog</h1>
+    </>
   )
 }
 

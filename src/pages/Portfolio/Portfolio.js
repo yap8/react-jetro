@@ -1,8 +1,8 @@
 const Portfolio = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h1>Portfolio</h1>
+    </>
   )
 }
 
