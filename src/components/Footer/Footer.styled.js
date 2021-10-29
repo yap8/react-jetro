@@ -11,10 +11,18 @@ export const Inner = styled(Container)`
   background-color: #e8663c;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 940px) {
+    padding: 16px;
+    height: auto; 
+    flex-direction: column;
+  }
 `
 
 export const Section = styled.div`
   width: 30%;
+  @media screen and (max-width: 940px) {
+    width: 100%;
+  }
 `
 
 export const Title = styled.h3`
