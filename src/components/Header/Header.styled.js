@@ -51,6 +51,7 @@ export const NavMenu = styled.ul`
     opacity: 1;
     transition: all .5s ease;
     background-color: #fff;
+    z-index: 999;
   }
 `
 
