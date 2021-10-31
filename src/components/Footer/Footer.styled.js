@@ -27,6 +27,7 @@ export const Section = styled.div`
 
 export const Title = styled.h3`
   font-size: 20px;
+  font-weight: 400;
   color: #fff;
   font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 18px;
