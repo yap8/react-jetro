@@ -1,4 +1,4 @@
-import { Carousel, SectionTitle } from "../../components"
+import { Carousel, Features, SectionTitle } from "../../components"
 
 const carouselItems = [
   {
@@ -38,6 +38,7 @@ const Home = () => {
     <>
       <SectionTitle hidden>Home</SectionTitle>
       <Carousel carouselItems={carouselItems} />
+      <Features />
     </>
   )
 }
