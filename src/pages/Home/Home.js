@@ -1,4 +1,4 @@
-import { Carousel, Features, SectionTitle } from "../../components"
+import { Carousel, Features, SectionTitle, Works } from "../../components"
 
 const carouselItems = [
   {
@@ -33,12 +33,20 @@ const carouselItems = [
   }
 ]
 
+const works = [
+  { img: 'work-1.png', title: 'Character design', date: 'June 15, 2012' },
+  { img: 'work-2.png', title: 'Brochure Design', date: 'June 15, 2012' },
+  { img: 'work-3.png', title: 'Social Media Buttons', date: 'June 15, 2012' },
+  { img: 'work-4.png', title: '10 Amazing Websites', date: 'June 15, 2012' },
+]
+
 const Home = () => {
   return (
     <>
       <SectionTitle hidden>Home</SectionTitle>
       <Carousel carouselItems={carouselItems} />
       <Features />
+      <Works works={works} title="recent works" />
     </>
   )
 }
