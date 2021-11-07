@@ -6,6 +6,7 @@ export const Wrapper = styled(SectionExtended)`
   display: block;
   z-index: -1;
   position: ${props => props.hidden ? 'absolute' : 'static'};
+  margin-bottom: 20px;
 `
 
 export const Inner = styled(Container)`
