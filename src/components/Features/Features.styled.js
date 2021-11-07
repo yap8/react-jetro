@@ -21,13 +21,16 @@ export const Item = styled.li`
   max-width: 300px;
   @media screen and (max-width: 940px) {
     max-width: 600px;
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 `
 
 export const ItemHeader = styled.div`
   display: flex;
   margin-bottom: 30px;
+  align-items: center;
   @media screen and (max-width: 940px) {
     margin-bottom: 10px;
     justify-content: center;
@@ -37,6 +40,9 @@ export const ItemHeader = styled.div`
 export const ItemIcon = styled.img`
   height: 46px;
   margin-right: 22px;
+  @media screen and (max-width: 940px) {
+    height: 32px;
+  }
 `
 
 export const ItemTitle = styled.h3`
@@ -46,6 +52,10 @@ export const ItemTitle = styled.h3`
   color: #e8663c;
   max-width: 170px;
   line-height: 24px;
+  @media screen and (max-width: 940px) {
+    font-size: 20px;
+    max-width: 100%;
+  }
 `
 
 export const ItemBody = styled.div``
