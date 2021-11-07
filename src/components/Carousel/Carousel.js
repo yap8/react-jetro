@@ -1,13 +1,15 @@
-import { CarouselContent, CarouselImage, CarouselItemsWrapper, CarouselText, CarouselThumbImage, CarouselThumbsWrapper, CarouselTitle, Inner, Wrapper } from "./Carousel.styled"
+import { CarouselButton, CarouselContent, CarouselImage, CarouselItemsWrapper, CarouselText, CarouselThumbImage, CarouselThumbsWrapper, CarouselTitle, Inner, Wrapper } from "./Carousel.styled"
 import { Swiper as CarouselItems, SwiperSlide as CarouselItem, Swiper as CarouselThumbs, SwiperSlide as CarouselThumb } from "swiper/react"
 import SwiperCore, { Navigation, Thumbs } from 'swiper'
 import 'swiper/swiper-bundle.css'
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 SwiperCore.use([Navigation, Thumbs])
 
 const Carousel = ({ carouselItems }) => {
   const [thumbs, setThumbs] = useState(null)
+  const prev = useRef(null)
+  const next = useRef(null)
 
   return (
     <Wrapper>
@@ -17,8 +19,13 @@ const Carousel = ({ carouselItems }) => {
             wrapperTag="ul"
             thumbs={{ swiper: thumbs }}
             loop
-            navigation
+            navigation={{
+              prevEl: prev.current,
+              nextEl: next.current
+            }}
           >
+            <CarouselButton ref={prev} prev />
+            <CarouselButton ref={next} next />
             {carouselItems.map(carouselItem => (
               <CarouselItem key={carouselItem.title} tag="li" style={{ height: 401 }}>
                 <CarouselImage src={carouselItem.img} />

@@ -18,6 +18,30 @@ export const CarouselImage = styled.img`
 
 `
 
+export const CarouselButton = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background: none;
+  background-image: url('arrow.png');
+  background-size: cover;
+  border: 0;
+  z-index: 99;
+  height: 52px;
+  width: 36px;
+  cursor: pointer;
+  ${props => props.next ? `
+    right: 26px;
+    transform: translateY(-50%) rotate(180deg);
+  ` : `
+    left: 26px;
+  `}
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+`
+
 export const CarouselContent = styled.div`
   max-width: 413px;
   position: absolute;
