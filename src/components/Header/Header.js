@@ -19,19 +19,19 @@ const Header = () => {
           </MenuToggle>
           <NavMenu onClick={() => setIsClicked(!isClicked)} isClicked={isClicked}>
             <NavItem>
-              <NavLink to="/">Home</NavLink>
+              <NavLink exact to="/" activeClassName="active">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/about">About us</NavLink>
+              <NavLink to="/about" activeClassName="active">About us</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/blog" activeClassName="active">Blog</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/portfolio">Portfolio</NavLink>
+              <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/contact">Contact us</NavLink>
+              <NavLink to="/contact" activeClassName="active">Contact us</NavLink>
             </NavItem>
           </NavMenu>
         </Inner>

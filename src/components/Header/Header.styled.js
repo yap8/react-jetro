@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import { Container } from "../../GlobalStyles";
 
@@ -71,7 +71,8 @@ export const NavLink = styled(Link)`
   color: #b9b9b9;
   text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
-  &:hover {
+  &:hover,
+  &.active {
     color: #e8603c;
   }
   @media screen and (max-width: 940px) {
