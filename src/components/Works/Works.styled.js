@@ -62,6 +62,20 @@ export const ItemImageWrapper = styled.div`
   height: 183px;
   overflow: hidden;
   position: relative;
+  &::after {
+    content: '';
+    display: block;
+    z-index: 999;
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    background-image: url('plus.png');
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .2s ease;
+  }
   @media screen and (max-width: 940px) {
     height: 200px;
   }
@@ -80,9 +94,15 @@ export const ItemImage = styled.img`
 export const ItemLink = styled(Link)`
   display: flex;
   flex-direction: column;
+  position: relative;
   &:hover {
     ${ItemImage} {
       filter: brightness(.3);
+    }
+    ${ItemImageWrapper} {
+      &::after {
+        opacity: 1;
+      }
     }
   }
 `
