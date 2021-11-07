@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.form`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 940px) {
+    flex-direction: column;
+  }
 `
 
 export const Section = styled.div`
@@ -11,6 +14,9 @@ export const Section = styled.div`
   width: 100%;
   max-width: 180px;
   ${props => props.form && `max-width: 460px;`}
+  @media screen and (max-width: 940px) {
+    max-width: 100%;
+  }
 `
 
 export const Text = styled.div`
