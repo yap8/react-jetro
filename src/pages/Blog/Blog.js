@@ -1,10 +1,13 @@
-import { Aside, SectionTitle } from "../../components"
+import { Aside, ContentWrapper, PageContent, SectionTitle } from "../../components"
 
 const Blog = () => {
   return (
     <>
       <SectionTitle>Blog</SectionTitle>
-      <Aside />
+      <ContentWrapper>
+        <PageContent></PageContent>
+        <Aside />
+      </ContentWrapper>
     </>
   )
 }

@@ -1,10 +1,16 @@
-import { Aside, SectionTitle } from "../../components"
+import { Aside, ContentWrapper, Form, Map, PageContent, SectionTitle } from "../../components"
 
 const Contact = () => {
   return (
     <>
       <SectionTitle>Contact us</SectionTitle>
-      <Aside />
+      <ContentWrapper>
+        <PageContent>
+          <Map />
+          <Form />
+        </PageContent>
+        <Aside />
+      </ContentWrapper>
     </>
   )
 }
