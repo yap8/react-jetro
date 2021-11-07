@@ -83,5 +83,9 @@ export const CarouselThumbImage = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: filter .2s ease;
   cursor: pointer;
+  &:hover {
+    filter: brightness(.5);
+  }
 `
