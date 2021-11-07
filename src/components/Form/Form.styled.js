@@ -50,6 +50,7 @@ export const TextField = styled.input`
   color: #333;
   font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 10px;
+  font-size: 12px;
   &::placeholder {
     color: #e8603c;
   }
