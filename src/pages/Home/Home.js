@@ -34,10 +34,10 @@ const carouselItems = [
 ]
 
 const works = [
-  { img: 'work-1.png', title: 'Character design', date: 'June 15, 2012' },
-  { img: 'work-2.png', title: 'Brochure Design', date: 'June 15, 2012' },
-  { img: 'work-3.png', title: 'Social Media Buttons', date: 'June 15, 2012' },
-  { img: 'work-4.png', title: '10 Amazing Websites', date: 'June 15, 2012' },
+  { img: 'works/work-1.png', title: 'Character design', date: 'June 15, 2012' },
+  { img: 'works/work-2.png', title: 'Brochure Design', date: 'June 15, 2012' },
+  { img: 'works/work-3.png', title: 'Social Media Buttons', date: 'June 15, 2012' },
+  { img: 'works/work-4.png', title: '10 Amazing Websites', date: 'June 15, 2012' },
 ]
 
 const Home = () => {

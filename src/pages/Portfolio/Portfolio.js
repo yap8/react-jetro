@@ -2,10 +2,10 @@ import { useEffect, useState } from "react"
 import { CategoryFilter, SectionTitle, Works } from "../../components"
 
 const works = [
-  { img: 'work-1.png', title: 'Character design', category: 'photoshop', date: 'June 15, 2012' },
-  { img: 'work-2.png', title: 'Brochure Design', category: 'print', date: 'June 15, 2012' },
-  { img: 'work-3.png', title: 'Social Media Buttons', category: 'web', date: 'June 15, 2012' },
-  { img: 'work-4.png', title: 'Wordpress theme', category: 'wordpress', date: 'June 15, 2012' },
+  { img: 'works/work-1.png', title: 'Character design', category: 'photoshop', date: 'June 15, 2012' },
+  { img: 'works/work-2.png', title: 'Brochure Design', category: 'print', date: 'June 15, 2012' },
+  { img: 'works/work-3.png', title: 'Social Media Buttons', category: 'web', date: 'June 15, 2012' },
+  { img: 'works/work-4.png', title: 'Wordpress theme', category: 'wordpress', date: 'June 15, 2012' },
 ]
 
 const Portfolio = () => {
