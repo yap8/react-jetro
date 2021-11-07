@@ -75,6 +75,7 @@ export const Button = styled.button`
   color: #fff;
   font-size: 12px;
   font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
   @media screen and (max-width: 940px) {
     width: 100%;
   }
