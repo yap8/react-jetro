@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const Wrapper = styled.aside``
 
 export const Inner = styled.div`
-  max-width: 220px;
+  width: 220px;
 `
 
 export const Section = styled.section`
