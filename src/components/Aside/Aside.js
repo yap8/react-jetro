@@ -33,7 +33,7 @@ const Aside = () => {
           <Categories>
             {categories.map(category => (
               <CategoryItem>
-                <CategoryLink>{category.name} ({category.amount})</CategoryLink>
+                <CategoryLink to={'category/' + category.name.replace(/\s+/g, '-').toLowerCase()}>{category.name} ({category.amount})</CategoryLink>
               </CategoryItem>
             ))}
           </Categories>
@@ -43,7 +43,7 @@ const Aside = () => {
           <Photos>
             {photos.map(photo => (
               <PhotoItem>
-                <PhotoLink color={photo.color} borderColor={photo.borderColor}>
+                <PhotoLink to={'photo/' + photo.img} color={photo.color} borderColor={photo.borderColor}>
                   <Photo />
                 </PhotoLink>
               </PhotoItem>
