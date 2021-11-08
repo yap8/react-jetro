@@ -9,13 +9,16 @@ export const Inner = styled(Container)``
 
 export const CarouselItemsWrapper = styled.div`
   margin-bottom: 17px;
+  height: 400px;
+  overflow: hidden;
   @media screen and (max-width: 940px) {
     margin-bottom: 30px;
   }
 `
 
 export const CarouselImage = styled.img`
-
+  min-width: 100%;
+  min-height: 400px;
 `
 
 export const CarouselButton = styled.button`
@@ -72,12 +75,14 @@ export const CarouselText = styled.div`
 
 export const CarouselThumbsWrapper = styled.div`
   margin-bottom: 40px;
+  height: 120px;
   @media screen and (max-width: 940px) {
     display: none;
   }
 `
 
 export const CarouselThumbImage = styled.img`
+  height: 120px;
   position: absolute;
   height: 110%;
   top: 50%;
