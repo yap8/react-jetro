@@ -1,7 +1,7 @@
 import { Footer, Header } from "./components";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from "./GlobalStyles";
-import { Home, About, Blog, Portfolio, Contact, PortfolioItem } from "./pages/";
+import { Home, About, Blog, Portfolio, Contact, PortfolioItem, NotFound } from "./pages/";
 
 const App = () => {
   return (
@@ -27,6 +27,9 @@ const App = () => {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </main>
