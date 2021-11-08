@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-export const Wrapper = styled.aside``
+export const Wrapper = styled.aside`
+  @media screen and (max-width: 940px) {
+    display: none;
+  }
+`
 
 export const Inner = styled.div`
   width: 220px;
