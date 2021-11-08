@@ -25,7 +25,7 @@ export const Title = styled.h2`
   &::after {
     content: '';
     position: absolute;
-    background-image: url('pattern.png');
+    background-image: url('http://localhost:3000/pattern.png');
     top: 0;
     width: 100%;
     height: 100%;
@@ -69,7 +69,7 @@ export const ItemImageWrapper = styled.div`
     position: absolute;
     height: 37px;
     width: 37px;
-    background-image: url('plus.png');
+    background-image: url('http://localhost:3000/plus.png');
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

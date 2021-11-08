@@ -51,27 +51,27 @@ const Footer = () => {
           <Social>
             <SocialItem>
               <SocialLink href="https://www.facebook.com/" target="_blank">
-                <SocialIcon src="facebook.png" />
+                <SocialIcon src="http://localhost:3000/facebook.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://twitter.com/" target="_blank">
-                <SocialIcon src="twitter.png" />
+                <SocialIcon src="http://localhost:3000/twitter.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="mailto:arseny.nebozhenko@gmail.com" target="_blank">
-                <SocialIcon src="email.png" />
+                <SocialIcon src="http://localhost:3000/email.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://www.rssboard.org/" target="_blank">
-                <SocialIcon src="rss.png" />
+                <SocialIcon src="http://localhost:3000/rss.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://vimeo.com/" target="_blank">
-                <SocialIcon src="vimeo.png" />
+                <SocialIcon src="http://localhost:3000/vimeo.png" />
               </SocialLink>
             </SocialItem>
           </Social>

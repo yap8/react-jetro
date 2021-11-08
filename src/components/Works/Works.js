@@ -10,7 +10,7 @@ const Works = ({ title, works }) => {
             <Item key={work.title}>
               <ItemLink to={'/portfolio/' + work.title.replace(/\s+/g, '-').toLowerCase()}>
                 <ItemImageWrapper>
-                  <ItemImage src={work.img} />
+                  <ItemImage src={'http://localhost:3000/' + work.img} />
                 </ItemImageWrapper>
                 <ItemInfo>
                   <ItemTitle>{work.title}</ItemTitle>
