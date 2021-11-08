@@ -6,9 +6,9 @@ const Works = ({ title, works }) => {
       <Inner>
         <Title>{title}</Title>
         <Items>
-          {works.map(work => (
+          {works && works.map(work => (
             <Item key={work.title}>
-              <ItemLink to={'/works/' + work.title}>
+              <ItemLink to={'/portfolio/' + work.title.replace(/\s+/g, '-').toLowerCase()}>
                 <ItemImageWrapper>
                   <ItemImage src={work.img} />
                 </ItemImageWrapper>

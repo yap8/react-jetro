@@ -1,7 +1,7 @@
 import { Footer, Header } from "./components";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from "./GlobalStyles";
-import { Home, About, Blog, Portfolio, Contact } from "./pages/";
+import { Home, About, Blog, Portfolio, Contact, PortfolioItem } from "./pages/";
 
 const App = () => {
   return (
@@ -21,6 +21,9 @@ const App = () => {
           </Route>
           <Route exact path="/portfolio">
             <Portfolio />
+          </Route>
+          <Route exact path="/portfolio/:title">
+            <PortfolioItem />
           </Route>
           <Route exact path="/contact">
             <Contact />
