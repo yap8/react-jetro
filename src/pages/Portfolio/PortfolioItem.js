@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react"
-import { useParams, useRouteMatch } from "react-router"
-import { SectionTitle, Works } from "../../components"
+import { useParams } from "react-router"
+import { PortfolioItemDetails, SectionTitle, Works } from "../../components"
 
 const PortfolioItem = () => {
+  const { title } = useParams()
+
   const [works, setWorks] = useState([])
   const [currentWork, setCurrentWork] = useState({})
 
@@ -11,13 +13,14 @@ const PortfolioItem = () => {
       .then(res => res.json())
       .then(data => {
         setWorks(data.portfolioItems)
+        setCurrentWork(data.portfolioItems.find(item => item.title.replace(/\s+/g, '-').toLowerCase() === title))
       })
-      .catch(err => console.log(err))
-  }, [])
+  }, [title])
 
   return (
     <>
       <SectionTitle>{currentWork.title}</SectionTitle>
+      <PortfolioItemDetails item={currentWork} />
       <Works title="related items" works={works.filter((item, index) => index < 4)} />
     </>
   )
