@@ -1,5 +1,5 @@
 import { Footer, Header } from "./components";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from "./GlobalStyles";
 import { Home, About, Blog, Portfolio, Contact, PortfolioItem, NotFound } from "./pages/";
 
