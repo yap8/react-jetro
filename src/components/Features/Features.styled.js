@@ -43,6 +43,9 @@ export const ItemIcon = styled.img`
   @media screen and (max-width: 940px) {
     height: 32px;
   }
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 `
 
 export const ItemTitle = styled.h3`
@@ -55,6 +58,9 @@ export const ItemTitle = styled.h3`
   @media screen and (max-width: 940px) {
     font-size: 20px;
     max-width: 100%;
+  }
+  @media screen and (max-width: 720px) {
+    text-align: center;
   }
 `
 
