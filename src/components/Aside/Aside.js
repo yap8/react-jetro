@@ -10,14 +10,14 @@ const categories = [
 ]
 
 const photos = [
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: '', color: '#f3af9d', borderColor: '#e8603c' }
+  { img: 'img-1.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'img-2.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'img-3.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'img-4.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'img-5.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'img-6.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'img-7.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'mike.png', color: '#f3af9d', borderColor: '#e8603c' }
 ]
 
 const Aside = () => {
@@ -32,7 +32,7 @@ const Aside = () => {
           <Title>Categories</Title>
           <Categories>
             {categories.map(category => (
-              <CategoryItem>
+              <CategoryItem key={category.name}>
                 <CategoryLink to={'category/' + category.name.replace(/\s+/g, '-').toLowerCase()}>{category.name} ({category.amount})</CategoryLink>
               </CategoryItem>
             ))}
@@ -42,9 +42,9 @@ const Aside = () => {
           <Title>Photo Gallery</Title>
           <Photos>
             {photos.map(photo => (
-              <PhotoItem>
-                <PhotoLink to={'photo/' + photo.img} color={photo.color} borderColor={photo.borderColor}>
-                  <Photo />
+              <PhotoItem key={photo.img}>
+                <PhotoLink href={photo.img} color={photo.color} borderColor={photo.borderColor}>
+                  <Photo src={photo.img} />
                 </PhotoLink>
               </PhotoItem>
             ))}

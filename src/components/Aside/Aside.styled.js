@@ -66,12 +66,21 @@ export const PhotoItem = styled.li`
   margin-bottom: 6px;
 `
 
-export const PhotoLink = styled(Link)`
+export const PhotoLink = styled.a`
   display: block;
   height: 50px;
   width: 50px;
   background-color: ${props => props.color || '#f3af9d'};
   border: 1px solid ${props => props.borderColor || '#e8603c'};
+  position: relative;
 `
 
-export const Photo = styled.img``
+export const Photo = styled.img`
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`
