@@ -9,7 +9,7 @@ const PortfolioItem = () => {
   const [currentWork, setCurrentWork] = useState({})
 
   useEffect(() => {
-    fetch('../db.json')
+    fetch('db.json')
       .then(res => res.json())
       .then(data => {
         setWorks(data.portfolioItems)
