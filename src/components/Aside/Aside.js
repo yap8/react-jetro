@@ -10,14 +10,14 @@ const categories = [
 ]
 
 const photos = [
-  { img: 'img-1.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'img-2.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'img-3.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'img-4.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'img-5.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'img-6.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'img-7.png', color: '#f3af9d', borderColor: '#e8603c' },
-  { img: 'mike.png', color: '#f3af9d', borderColor: '#e8603c' }
+  { img: 'gallery/1.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/2.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/3.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/4.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/5.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/6.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/7.png', color: '#f3af9d', borderColor: '#e8603c' },
+  { img: 'gallery/8.png', color: '#f3af9d', borderColor: '#e8603c' }
 ]
 
 const Aside = () => {
@@ -43,8 +43,8 @@ const Aside = () => {
           <Photos>
             {photos.map(photo => (
               <PhotoItem key={photo.img}>
-                <PhotoLink href={photo.img} color={photo.color} borderColor={photo.borderColor}>
-                  <Photo src={photo.img} />
+                <PhotoLink href={`/react-jetro/${photo.img}`} color={photo.color} borderColor={photo.borderColor}>
+                  <Photo src={`/react-jetro/${photo.img}`} />
                 </PhotoLink>
               </PhotoItem>
             ))}
