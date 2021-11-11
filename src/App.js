@@ -5,7 +5,7 @@ import { Home, About, Blog, Portfolio, Contact, PortfolioItem, NotFound } from "
 
 const App = () => {
   return (
-    <Router basename="/react-jetro">
+    <Router>
       <GlobalStyle />
       <Header />
       <main>
