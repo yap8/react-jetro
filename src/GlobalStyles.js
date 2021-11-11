@@ -24,7 +24,7 @@ export const Section = styled.section`
 export const Container = styled.div`
   max-width: 940px;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 `
 
 export const SectionExtended = styled(Section)`
