@@ -59,7 +59,13 @@ export const ItemImage = styled.img`
   min-height: inherit;
 `
 
-export const ItemVideo = styled.img``
+export const ItemVideo = styled.div`
+  min-height: 300px;
+  iframe {
+    min-width: 100%;
+    min-height: inherit;
+  }
+`
 
 export const ItemBody = styled.div`
   display: flex;

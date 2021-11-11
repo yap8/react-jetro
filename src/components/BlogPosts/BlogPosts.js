@@ -9,7 +9,7 @@ const BlogPosts = ({ blogPosts }) => {
             {(post.image || post.video) && (
               <ItemHeader>
                 {post.image && <ItemImage src={`/react-jetro/${post.image}`} />}
-                {post.video && <ItemVideo />}
+                {post.video && <ItemVideo dangerouslySetInnerHTML={{__html: post.video}} />}
               </ItemHeader>
             )}
             <ItemBody>
