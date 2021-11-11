@@ -32,6 +32,15 @@ export const Item = styled.li`
     height: 13px;
     bottom: 0;
   }
+  @media screen and (max-width: 1200px) {
+    &::before {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 940px) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
 `
 
 export const ItemHeader = styled.div`
@@ -54,11 +63,18 @@ export const ItemVideo = styled.img``
 
 export const ItemBody = styled.div`
   display: flex;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
 `
 
 export const ItemInfo = styled.div`
   min-width: 140px;
   margin-right: 10px;
+  @media screen and (max-width: 940px) {
+    min-width: 110px;
+    margin-right: 5px;
+  }
 `
 
 export const ItemInfoTitle = styled.h4`
