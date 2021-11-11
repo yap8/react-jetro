@@ -28,7 +28,7 @@ const Carousel = ({ carouselItems }) => {
             <CarouselButton ref={next} next />
             {carouselItems.map(carouselItem => (
               <CarouselItem key={carouselItem.title} tag="li" style={{ height: 401 }}>
-                <CarouselImage src={carouselItem.img} />
+                <CarouselImage src={`/react-jetro/${carouselItem.img}`} />
                 <CarouselContent>
                   <CarouselTitle>{carouselItem.title}</CarouselTitle>
                   <CarouselText>{carouselItem.text}</CarouselText>
@@ -46,7 +46,7 @@ const Carousel = ({ carouselItems }) => {
           >
             {carouselItems.map(carouselItem => (
               <CarouselThumb style={{ height: 120, width: 140, overflow: 'hidden' }}>
-                <CarouselThumbImage src={carouselItem.img} />
+                <CarouselThumbImage src={`/react-jetro/${carouselItem.img}`} />
               </CarouselThumb>
             ))}
           </CarouselThumbs>

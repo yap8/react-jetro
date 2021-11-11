@@ -2,6 +2,7 @@
   "name": "react-jetro",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://localhost:3000/react-jetro",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -39,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3000/react-jetro"
 }

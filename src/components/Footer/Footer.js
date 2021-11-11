@@ -51,27 +51,27 @@ const Footer = () => {
           <Social>
             <SocialItem>
               <SocialLink href="https://www.facebook.com/" target="_blank">
-                <SocialIcon src="http://localhost:3000/facebook.png" />
+                <SocialIcon src="/react-jetro/facebook.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://twitter.com/" target="_blank">
-                <SocialIcon src="http://localhost:3000/twitter.png" />
+                <SocialIcon src="/react-jetro/twitter.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="mailto:arseny.nebozhenko@gmail.com" target="_blank">
-                <SocialIcon src="http://localhost:3000/email.png" />
+                <SocialIcon src="/react-jetro/email.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://www.rssboard.org/" target="_blank">
-                <SocialIcon src="http://localhost:3000/rss.png" />
+                <SocialIcon src="/react-jetro/rss.png" />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://vimeo.com/" target="_blank">
-                <SocialIcon src="http://localhost:3000/vimeo.png" />
+                <SocialIcon src="/react-jetro/vimeo.png" />
               </SocialLink>
             </SocialItem>
           </Social>

@@ -6,7 +6,7 @@ const PortfolioItemDetails = ({ item }) => {
     <Wrapper>
       <Inner>
         <HeroImageWrapper>
-          <HeroImage src={'http://localhost:3000/' + item.img} />
+          <HeroImage src={'/react-jetro/' + item.img} />
         </HeroImageWrapper>
         <Text>{item.text}</Text>
       </Inner>
